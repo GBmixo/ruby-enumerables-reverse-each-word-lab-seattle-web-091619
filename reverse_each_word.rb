@@ -5,8 +5,8 @@ def reverse_each_word(string)
   count = 0
   
   reversing = b.map { |word|
-    
-    while count < word.length + 2
+    proper_size = word.length + 1
+    while count < proper_size
       moving = word.pop
       p moving
       moved = reversed.push(moving)
