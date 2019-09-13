@@ -7,7 +7,7 @@ def reverse_each_word(string)
     #word.size.times { reversed << b.pop }
     while count < word.length + 1
       moving = word.pop
-      
+      p moving
       moved = reversed.push(moving)
       #p moved
       count += 1
