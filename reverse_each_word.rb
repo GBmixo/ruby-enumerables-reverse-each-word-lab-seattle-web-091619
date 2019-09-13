@@ -21,7 +21,7 @@ def reverse_each_word(string)
     end
     
   }
-  p reversed
+  p reformed
 end
 
 reverse_each_word("please reverse this")
