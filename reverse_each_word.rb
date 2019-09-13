@@ -2,17 +2,19 @@ def reverse_each_word(string)
   a = string.split(" ")
   b = a.map {|buh| buh.split("")}
   reversed = []
-  
+  count = 0
   reversing = b.map { |word|
     #word.size.times { reversed << b.pop }
-    
-    moving = word.pop
-    p moving
-    moved = reversed.push(moving)
-    #p moved
+    while count < word.length
+      moving = word.pop
+      
+      moved = reversed.push(moving)
+      #p moved
+      count += 1
+    end
     
   }
-  p b
+  p reversed
 end
 
 reverse_each_word("please reverse this")
