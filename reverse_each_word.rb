@@ -1,7 +1,7 @@
 def reverse_each_word(string)
   #makes an array of words that are each arrays of letters
   a = string.split(" ")
-  b = a.collect {|buh| buh.split("")}
+  b = a.map {|buh| buh.split("")}
   
   #holds reversed letters in reversed words
   reversed = []
@@ -27,7 +27,7 @@ def reverse_each_word(string)
   }
   
   #combines the letters and words
-  reformed = reversed.collect {|words| 
+  reformed = reversed.map {|words| 
    words.join("")
   }
   
