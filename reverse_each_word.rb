@@ -1,10 +1,11 @@
 def reverse_each_word(string)
   a = string.split(" ")
-  b = a.map {|buh| buh.split("")}
+  b = a.collect {|buh| buh.split("")}
   reversed = []
+  
   count = 0
   
-  reversing = b.map { |word|
+  reversing = b.collect { |word|
     proper_size = word.length
     while count < proper_size
       moving = word.pop
