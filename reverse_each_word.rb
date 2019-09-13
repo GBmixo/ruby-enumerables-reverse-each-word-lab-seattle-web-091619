@@ -12,9 +12,11 @@ def reverse_each_word(string)
       #p moved
       count += 1
     end
+    if count > word.length
+      count = 0
+    end
     
   }
-  reversing
   p reversed
 end
 
