@@ -20,7 +20,6 @@ def reverse_each_word(string)
     end
     
   }
-  reversing
   p reversed
 end
 
