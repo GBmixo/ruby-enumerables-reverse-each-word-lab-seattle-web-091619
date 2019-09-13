@@ -16,6 +16,7 @@ def reverse_each_word(string)
     
     if count > word.length
       count = 0
+      reversed.join("")
     end
     
   }
