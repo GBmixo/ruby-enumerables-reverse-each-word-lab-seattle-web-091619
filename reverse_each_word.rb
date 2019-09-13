@@ -7,10 +7,11 @@ def reverse_each_word(string)
   
   reversing = b.collect { |word|
     proper_size = word.length
+    reversed.push([])
     while count < proper_size
       moving = word.pop
       p moving
-      moved = reversed.push(moving)
+      moved = reversed[-1].push(moving)
       count += 1
     end
     
