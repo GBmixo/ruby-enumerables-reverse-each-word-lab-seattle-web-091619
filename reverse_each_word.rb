@@ -28,6 +28,12 @@ def reverse_each_word(string)
     end
     
   }
+  
+  #combines the letters and words
+  reformed = reversed.collect {|words| 
+   words.collect {|letters| letters.join("")}
+  }
+  
   p reversed
   p reformed
 end
