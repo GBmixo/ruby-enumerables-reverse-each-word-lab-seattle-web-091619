@@ -2,7 +2,7 @@ def reverse_each_word(string)
   a = string.split(" ")
   b = a.collect {|buh| buh.split("")}
   reversed = []
-  
+  reformed = reversed.join(" ")
   count = 0
   
   reversing = b.collect { |word|
