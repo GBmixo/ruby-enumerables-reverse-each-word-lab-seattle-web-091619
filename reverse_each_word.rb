@@ -8,7 +8,7 @@ def reverse_each_word(string)
   
   #combines the letters and words
   reformed = reversed.collect {|words| 
-   words.collect {|letters| letters.join("")
+   words.collect {|letters| letters.join("")}
   }
   count = 0
   
