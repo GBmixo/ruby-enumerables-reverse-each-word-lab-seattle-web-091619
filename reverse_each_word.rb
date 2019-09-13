@@ -4,13 +4,13 @@ def reverse_each_word(string)
   reversed = []
   count = 0
   reversing = b.map { |word|
-    #word.size.times { reversed << b.pop }
+    
     #while count < word.length + 1
-      moving = word.pop
-      p moving
-      moved = reversed.push(moving)
-      count += 1
-    end
+      #moving = word.pop
+      #p moving
+      #moved = reversed.push(moving)
+      #count += 1
+    #end
     if count > word.length
       count = 0
     end
@@ -25,3 +25,5 @@ reverse_each_word("please reverse this")
   #new.push(yield(array[count]))
   #count += 1
   #end
+  
+  #word.size.times { reversed << b.pop }
