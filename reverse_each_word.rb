@@ -3,14 +3,15 @@ def reverse_each_word(string)
   b = a.map {|buh| buh.split("")}
   reversed = []
   count = 0
+  
   reversing = b.map { |word|
-    
     #while count < word.length + 1
       #moving = word.pop
       #p moving
       #moved = reversed.push(moving)
       #count += 1
     #end
+    
     if count > word.length
       count = 0
     end
