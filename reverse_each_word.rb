@@ -8,6 +8,7 @@ def reverse_each_word(string)
 
   count = 0
   
+  #takes each letter into reversed and joins them together
   reversing = b.collect { |word|
     proper_size = word.length
     reversed.push([])
@@ -30,15 +31,11 @@ def reverse_each_word(string)
    words.join("")
   }
   
+  final = reformed.join(" ")
+  
+  
   p reversed
-  p reformed
+  p final
 end
 
 reverse_each_word("please reverse this")
-
-  #while count < array.length
-  #new.push(yield(array[count]))
-  #count += 1
-  #end
-  
-  #word.size.times { reversed << b.pop }
