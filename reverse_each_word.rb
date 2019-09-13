@@ -5,11 +5,6 @@ def reverse_each_word(string)
   
   #holds reversed letters in reversed words
   reversed = []
-  
-  #combines the letters and words
-  reformed = reversed.collect {|words| 
-   words.join("")
-  }
 
   count = 0
   
@@ -30,6 +25,10 @@ def reverse_each_word(string)
     
   }
   
+  #combines the letters and words
+  reformed = reversed.collect {|words| 
+   words.join("")
+  }
   
   p reversed
   p reformed
