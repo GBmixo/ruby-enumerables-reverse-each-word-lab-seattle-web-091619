@@ -10,7 +10,7 @@ def reverse_each_word(string)
     reversed.push([])
     while count < proper_size
       moving = word.pop
-      p moving
+      #p moving
       moved = reversed[-1].push(moving)
       count += 1
     end
@@ -21,6 +21,7 @@ def reverse_each_word(string)
     end
     
   }
+  p reversed
   p reformed
 end
 
